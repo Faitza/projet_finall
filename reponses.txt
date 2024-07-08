@@ -1,0 +1,92 @@
+Partie II : Questionnaire (20pts)
+Dites ce que fait chaque commande :
+
+
+1. Que fait la commande git init ?
+La commande git init initialise un nouveau dépôt Git dans le répertoire courant. Cela crée un sous-répertoire caché .git contenant tous les fichiers nécessaires à la gestion des versions, mais sans ajouter de fichiers de votre projet dans le suivi Git.
+
+2. Expliquez ce que fait git clone.
+La commande git clone copie un dépôt Git distant dans un nouveau répertoire local. Elle crée un répertoire, y initialise un dépôt Git, récupère toutes les branches et l'historique, et configure le dépôt distant.
+
+3. Quelle est la fonction de git add?
+
+La commande git add ajoute des modifications de fichiers dans l'index (staging area). Elle prépare les modifications pour le prochain commit en les incluant dans l'instantané de commit.
+4. Décrivez ce que fait git commit.
+La commande git commit enregistre les modifications ajoutées dans l'index (staging area) dans l'historique de votre dépôt. Chaque commit crée un instantané du projet à ce moment précis et inclut un message de commit décrivant les modifications. C'est l'étape où vous sauvegardez effectivement les modifications dans le dépôt Git.
+
+
+
+5. Qu'est-ce que git status affiche ?La commande git status affiche l'état de l'arborescence de travail et de l'index. Elle montre les informations suivantes :
+
+Les fichiers suivis qui ont été modifiés mais pas encore ajoutés à l'index (staging area).
+Les fichiers qui ont été ajoutés à l'index et qui sont prêts à être commit.
+Les fichiers non suivis (nouveaux fichiers) qui ne sont pas encore sous suivi de version.
+La branche actuelle et son état par rapport au dépôt distant (par exemple, le nombre de commits d'avance ou de retard).
+
+
+
+
+
+6. À quoi sert git diff ?
+La commande git diff est utilisée pour afficher les différences entre divers arbres. Elle peut montrer les différences entre :
+
+L'arborescence de travail et l'index (staging area).
+L'index et le dernier commit.
+Deux commits spécifiques.
+
+
+
+7. Comment utilise-t-on git log ?
+La commande git log affiche l'historique des commits pour la branche actuelle. Elle montre par défaut les commits avec leur ID, auteur, date et message de commit. Vous pouvez également utiliser des options pour personnaliser la sortie du journal.
+
+
+
+8. Que fait git branch ?
+
+La commande git branch est utilisée pour gérer les branches dans votre dépôt. Elle peut lister, créer ou supprimer des branches.
+
+
+9. Expliquez git checkout.
+La commande git checkout est utilisée pour naviguer entre les branches créées par git branch. Elle peut également être utilisée pour restaurer les fichiers dans l'arborescence de travail à un état spécifique, soit à partir d'un commit, soit d'une branche.
+
+
+
+10. À quoi sert git merge ?
+La commande git merge est utilisée pour fusionner les modifications d'une branche dans la branche courante. Cela permet d'intégrer les changements d'une branche dans une autre, ce qui est essentiel pour collaborer et combiner le travail de différents développeurs.
+
+
+
+11. Quelle est la différence entre git merge et git rebase ?
+git merge :
+
+Combine les modifications de deux branches en créant un nouveau commit de fusion.
+L'historique de commit montre tous les commits des deux branches et un commit de fusion.
+Tandis que git rebase :
+
+Rejoue les commits de la branche courante sur une autre branche, réécrivant l'historique des commits.
+Produit un historique linéaire, sans commit de fusion.
+
+
+12. Comment utilise-t-on git stash?
+La commande git stash est utilisée pour sauvegarder temporairement les modifications de l'arborescence de travail sans les committer. Cela permet de revenir à un état propre de la branche pour effectuer d'autres tâches.
+
+
+
+
+13. Que fait git fetch ?
+La commande git fetch récupère les objets et les références d'un dépôt distant vers votre dépôt local, sans les intégrer dans votre branche actuelle. Cela permet de voir les changements disponibles avant de les fusionner.
+
+
+
+
+14. Décrivez l'utilisation de git pull.
+La commande git pull est utilisée pour récupérer les modifications d'un dépôt distant et les fusionner dans la branche courante. C'est une combinaison de git fetch et git merge.
+
+15. Quelle est la fonction de git push ?
+La commande git push est utilisée pour envoyer les commits de la branche locale vers un dépôt distant. Cela permet de partager vos modifications avec les autres collaborateurs.
+
+
+
+
+16. Expliquez ce que fait git remote.
+La commande git remote permet de gérer les dépôts distants. Elle permet d'ajouter, de supprimer et de voir les dépôts distants associés à votre dépôt local.
